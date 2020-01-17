@@ -1,0 +1,89 @@
+@font-face { font-family: "IcoMoon-Free"; src: url("../fonts/IcoMoon-Free.ttf") format("truetype"); }
+/* line 5, style.scss */
+* { box-sizing: border-box; }
+
+/* line 8, style.scss */
+body { font-family: 'Roboto', sans-serif; color: #777777; }
+
+/* line 12, style.scss */
+.container { max-width: 1140px; margin: 0 auto; }
+
+/* line 16, style.scss */
+.header__inner { padding: 25px 15px 30px 0; display: flex; justify-content: space-between; align-items: center; }
+/* line 21, style.scss */
+.header__inner .pos-f-t { display: none; }
+
+/* line 25, style.scss */
+.nav ul { display: flex; padding-top: 5px; justify-content: space-around; width: 588px; font-size: 14px; }
+
+/* line 32, style.scss */
+.nav ul li, .bg-white { list-style: none; }
+/* line 35, style.scss */
+.nav ul li a, .bg-white a { text-decoration: none; color: inherit; text-transform: uppercase; font-weight: 700; }
+/* line 40, style.scss */
+.nav ul li a:active, .bg-white a:active { color: #000000; position: relative; }
+/* line 43, style.scss */
+.nav ul li a:active:active::before, .bg-white a:active:active::before { position: absolute; content: " "; width: 20px; height: 1px; background-color: #000; top: calc(50% - .5px); right: calc(100% + 10px); }
+/* line 54, style.scss */
+.nav ul li .search-link, .bg-white .search-link { text-transform: lowercase; font-family: 'icomoon-free', sans-serif; }
+
+/* line 59, style.scss */
+.p-4 { padding: 0 !important; }
+
+@media only screen and (max-width: 1000px) { /* line 63, style.scss */
+  .header .nav { display: none; }
+  /* line 66, style.scss */
+  .header .pos-f-t { display: block; } }
+/* line 70, style.scss */
+.main { margin-bottom: 5vh; position: relative; }
+
+/* line 74, style.scss */
+.creative__agency, .design__branding { width: 100%; height: 75vh; background-image: url(../image/creative__agency-bg.png); background-repeat: no-repeat; background-position: center; background-size: cover; padding-top: 25vh; }
+
+/* line 84, style.scss */
+.design__branding { background-image: url(../image/desing__branding.png); }
+
+/* line 87, style.scss */
+.carousel-indicators li { height: 20px; width: 20px; border-radius: 50%; opacity: 1; position: relative; }
+/* line 93, style.scss */
+.carousel-indicators li::after { content: ""; height: 15px; width: 15px; background-color: #fff; border-radius: 50%; position: absolute; left: calc(50% - 8px); top: calc(50% - 8px); }
+
+/* line 104, style.scss */
+.carousel-indicators .active { background-color: #000000; }
+
+/* line 107, style.scss */
+.slick__title { height: 56px; width: 700px; background-color: #000000; font-size: 48px; letter-spacing: 5px; text-align: center; color: #fff; margin: 0 auto; font-weight: 300; }
+
+/* line 118, style.scss */
+.slick__text { margin: 0 auto; color: #000; font-size: 18px; letter-spacing: 10px; font-weight: 300; text-align: center; line-height: 92px; }
+
+/* line 127, style.scss */
+.carousel-control-prev, .carousel-control-next { height: 43px; width: 43px; border-radius: 50%; background-color: #000; top: calc(50% - 21px); }
+
+/* line 135, style.scss */
+.carousel-control-next { left: 90%; }
+
+/* line 138, style.scss */
+.carousel-control-prev { left: 5%; }
+
+@media only screen and (max-width: 910px) { /* line 142, style.scss */
+  .carousel-control-prev, .carousel-control-next { top: 0; height: 100%; width: 5%; border-radius: 0%; background-color: linear-gradient(to right, rgba(225, 225, 228, 0.1), rgba(0, 0, 0, 0.2)); }
+  /* line 150, style.scss */
+  .carousel-control-prev { left: 0; }
+  /* line 153, style.scss */
+  .carousel-control-next { left: 95%; }
+  /* line 156, style.scss */
+  .slick__title { height: 36px; width: 400px; background-color: #000000; font-size: 28px; letter-spacing: 5px; text-align: center; color: #fff; margin: 0 auto; font-weight: 300; } }
+/* line 169, style.scss */
+.bottom__nav-bar { font-size: 14px; font-weight: 700; text-transform: uppercase; }
+/* line 173, style.scss */
+.bottom__nav-bar .breadcrumb { background-color: #fff; justify-content: center; align-items: center; }
+/* line 177, style.scss */
+.bottom__nav-bar .breadcrumb .breadcrumb-item a { color: #777777; }
+/* line 179, style.scss */
+.bottom__nav-bar .breadcrumb .breadcrumb-item a:hover { text-decoration: none; }
+/* line 182, style.scss */
+.bottom__nav-bar .breadcrumb .breadcrumb-item a:active { color: #000000; position: relative; text-decoration: none !important; border: none !important; }
+
+/* line 191, style.scss */
+.breadcrumb-item + .breadcrumb-item::before { color: #e3e3e3; }

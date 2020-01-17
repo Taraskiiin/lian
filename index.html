@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="default__logo" href="#"><img src="image/logo.svg"></a>
+                <nav class="nav">
+                    <ul>
+                        <li class="home"><a class="active" href="#">HOME</a></li>
+                        <li class="about"><a href="#">ABOUT</a></li>
+                        <li class="portfolio"><a href="#">PORTFOLIO</a></li>
+                        <li class="blog"><a href="#">BLOG</a></li>
+                        <li class="contact"><a href="#">CONTACT</a></li>
+                        <li class="search"><a class="search-link" href="#">search</a></li>
+                    </ul>
+                </nav>
+                <div class="pos-f-t">
+                    <nav class="navbar navbar-light bg-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="bg-white p-4">
+                            <a class="nav-link active" href="#">home</a>
+                            <a class="nav-link" href="#">about</a>
+                            <a class="nav-link" href="#">services</a>
+                            <a class="nav-link" href="#">blog</a>
+                            <a class="nav-link" href="#">features</a>
+                            <a class="nav-link" href="#">contacts</a>
+                            <a class="nav-link search-link" href="#">search</a>
+                        </div>
+                    </div>
+                </div>
+                        
+            </div>
+        </div>
+    </header>
+    <main class="main">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">left5</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">right5</span>
+            </a>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="creative__agency">
+                        <div class="container">
+                            <h2 class="slick__title">Lian Creative Agency</h2>
+                            <p class="slick__text">Minimal Freelance Portfolio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="design__branding">
+                        <div class="container">
+                            <h2 class="slick__title">Design & Branding</h2>
+                            <p class="slick__text">We Deliver Quality Results</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="bottom__nav-bar">
+        <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">All</a></li>
+              <li class="breadcrumb-item"><a href="#">Logo</a></li>
+              <li class="breadcrumb-item"><a href="#">Mobile app</a></li>
+              <li class="breadcrumb-item"><a href="#">Wordpress</a></li>
+              <li class="breadcrumb-item"><a href="#">Web Desigh</a></li>
+              <li class="breadcrumb-item"><a href="#">Ui/Ux</a></li>
+              <li class="breadcrumb-item"><a href="#">Branding</a></li>
+            </ol>
+          </nav>
+        </div>
+    </section>
+    <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="JS/main.js"></script>
+</body>
+
+</html>
