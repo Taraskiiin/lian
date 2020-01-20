@@ -150,16 +150,15 @@ body{
     .carousel-control-next{
         left: 95%;
     }
+    .carousel-indicators{
+        display: none;
+    }
     .slick__title{
         height: 36px;
         width: 400px;
         background-color: #000000;
         font-size: 28px;
         letter-spacing: 5px;
-        text-align: center;
-        color: #fff;
-        margin: 0 auto;
-        font-weight: 600;
     }
     .slick__text{
         font-size: 14px;
@@ -168,6 +167,9 @@ body{
     }  
 }
 @media only screen and (max-width: 458px){
+    .carousel-indicators{
+        display: flex;
+    }
     .carousel-control-prev,
     .carousel-control-next{
         display: none;
