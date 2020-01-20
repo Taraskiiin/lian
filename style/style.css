@@ -3,101 +3,137 @@
 * { box-sizing: border-box; }
 
 /* line 8, style.scss */
-body { font-family: 'Roboto', sans-serif; color: #777777; }
+body { font-family: 'Roboto', sans-serif; color: #777777; background-color: #fafafa; }
 
-/* line 12, style.scss */
+/* line 13, style.scss */
 .container { max-width: 1140px; margin: 0 auto; }
 
-/* line 16, style.scss */
+/* line 17, style.scss */
+.header { background-color: #fff; }
+
+/* line 20, style.scss */
 .header__inner { padding: 25px 15px 30px 0; display: flex; justify-content: space-between; align-items: center; }
-/* line 21, style.scss */
+/* line 25, style.scss */
 .header__inner .pos-f-t { display: none; }
 
-/* line 25, style.scss */
+/* line 29, style.scss */
 .nav ul { display: flex; padding-top: 5px; justify-content: space-around; width: 588px; font-size: 14px; }
 
-/* line 32, style.scss */
+/* line 36, style.scss */
 .nav ul li, .bg-white { list-style: none; }
-/* line 35, style.scss */
+/* line 39, style.scss */
 .nav ul li a, .bg-white a { text-decoration: none; color: inherit; text-transform: uppercase; font-weight: 700; }
-/* line 40, style.scss */
+/* line 44, style.scss */
 .nav ul li a:active, .bg-white a:active { color: #000000; position: relative; }
-/* line 43, style.scss */
+/* line 47, style.scss */
 .nav ul li a:active:active::before, .bg-white a:active:active::before { position: absolute; content: " "; width: 20px; height: 1px; background-color: #000; top: calc(50% - .5px); right: calc(100% + 10px); }
-/* line 54, style.scss */
+/* line 58, style.scss */
 .nav ul li .search-link, .bg-white .search-link { text-transform: lowercase; font-family: 'icomoon-free', sans-serif; }
 
-/* line 59, style.scss */
+/* line 63, style.scss */
 .p-4 { padding: 0 !important; }
 
-@media only screen and (max-width: 1000px) { /* line 63, style.scss */
+@media only screen and (max-width: 1000px) { /* line 67, style.scss */
   .header .nav { display: none; }
-  /* line 66, style.scss */
+  /* line 70, style.scss */
   .header .pos-f-t { display: block; } }
-/* line 70, style.scss */
+/* line 74, style.scss */
 .main { margin-bottom: 5vh; position: relative; }
 
-/* line 74, style.scss */
+/* line 78, style.scss */
 .creative__agency, .design__branding { width: 100%; height: 75vh; background-image: url(../image/creative__agency-bg.png); background-repeat: no-repeat; background-position: center; background-size: cover; padding-top: 25vh; }
 
-/* line 84, style.scss */
+/* line 88, style.scss */
 .design__branding { background-image: url(../image/desing__branding.png); }
 
-/* line 87, style.scss */
+/* line 91, style.scss */
 .carousel-indicators li { width: 15px; height: 15px; border: solid 0 transparent; border-radius: 50%; opacity: 1; margin-right: 17px; position: relative; background-color: #fff; }
 
-/* line 98, style.scss */
+/* line 102, style.scss */
 .carousel-indicators .active { background-color: #fff; height: 11px; width: 11px; border: solid 2px #000000; }
 
-/* line 104, style.scss */
+/* line 108, style.scss */
 .slick__title { height: 56px; width: 700px; background-color: #000000; font-size: 48px; letter-spacing: 5px; text-align: center; color: #fff; margin: 0 auto; font-weight: 300; }
 
-/* line 115, style.scss */
+/* line 119, style.scss */
 .slick__text { margin: 0 auto; color: #000; font-size: 18px; letter-spacing: 5px; font-weight: 300; text-align: center; line-height: 92px; text-transform: uppercase; }
 
-/* line 125, style.scss */
+/* line 129, style.scss */
 .carousel-control-prev, .carousel-control-next { height: 43px; width: 43px; border-radius: 50%; background-color: #000; top: calc(50% - 21px); }
 
-/* line 133, style.scss */
+/* line 137, style.scss */
 .carousel-control-next { left: 90%; }
 
-/* line 136, style.scss */
+/* line 140, style.scss */
 .carousel-control-prev { left: 5%; }
 
-@media only screen and (max-width: 910px) { /* line 140, style.scss */
+@media only screen and (max-width: 910px) { /* line 144, style.scss */
   .carousel-control-prev, .carousel-control-next { top: 0; height: 100%; width: 5%; border-radius: 0%; }
-  /* line 147, style.scss */
+  /* line 151, style.scss */
   .carousel-control-prev { left: 0; }
-  /* line 150, style.scss */
+  /* line 154, style.scss */
   .carousel-control-next { left: 95%; }
-  /* line 153, style.scss */
+  /* line 157, style.scss */
   .carousel-indicators { display: none; }
-  /* line 156, style.scss */
+  /* line 160, style.scss */
   .slick__title { height: 36px; width: 400px; background-color: #000000; font-size: 28px; letter-spacing: 5px; }
-  /* line 163, style.scss */
+  /* line 167, style.scss */
   .slick__text { font-size: 14px; margin-top: 1%; letter-spacing: 3px; } }
-@media only screen and (max-width: 458px) { /* line 170, style.scss */
+@media only screen and (max-width: 458px) { /* line 174, style.scss */
   .carousel-indicators { display: flex; }
-  /* line 173, style.scss */
-  .carousel-control-prev, .carousel-control-next { display: none; }
   /* line 177, style.scss */
+  .carousel-control-prev, .carousel-control-next { display: none; }
+  /* line 181, style.scss */
   .slick__title { max-height: 100%; max-width: 80%; background-color: #000000; font-size: 14px; line-height: 28px; letter-spacing: 2.1px; text-align: center; color: #fff; margin: 0 auto; font-weight: 300; }
-  /* line 189, style.scss */
-  .slick__text { font-size: 10px; letter-spacing: 1px; }
   /* line 193, style.scss */
-  .carousel-indicators li { height: 10px; width: 10px; }
+  .slick__text { font-size: 10px; letter-spacing: 1px; }
   /* line 197, style.scss */
+  .carousel-indicators li { height: 10px; width: 10px; }
+  /* line 201, style.scss */
   .carousel-indicators .active { background-color: #fff; height: 7px; width: 7px; border: solid 1.5px #000000; } }
-/* line 204, style.scss */
-.bottom__nav-bar { font-size: 14px; font-weight: 700; text-transform: uppercase; }
 /* line 208, style.scss */
-.bottom__nav-bar .breadcrumb { background-color: #fff; justify-content: center; align-items: center; }
+.bottom__nav-bar { font-size: 14px; font-weight: 700; text-transform: uppercase; }
 /* line 212, style.scss */
-.bottom__nav-bar .breadcrumb .breadcrumb-item a { color: #777777; }
-/* line 214, style.scss */
-.bottom__nav-bar .breadcrumb .breadcrumb-item a:hover { text-decoration: none; }
+.bottom__nav-bar .breadcrumb { background-color: #fff; justify-content: center; background-color: #fafafa; align-items: center; }
 /* line 217, style.scss */
+.bottom__nav-bar .breadcrumb .breadcrumb-item a { color: #777777; }
+/* line 219, style.scss */
+.bottom__nav-bar .breadcrumb .breadcrumb-item a:hover { text-decoration: none; }
+/* line 222, style.scss */
 .bottom__nav-bar .breadcrumb .breadcrumb-item a:active { color: #000000; position: relative; text-decoration: none !important; border: none !important; }
 
-/* line 226, style.scss */
+/* line 231, style.scss */
 .breadcrumb-item + .breadcrumb-item::before { color: #e3e3e3; }
+
+/* line 234, style.scss */
+.card-body { display: block; background-image: url(../image/liquido.png); background-repeat: no-repeat; background-size: cover; background-position: center; max-height: 350px; min-height: 250px; width: 100%; margin-bottom: 35px; }
+
+/* line 245, style.scss */
+.table__and__chairs { background-image: url(../image/table&chars.png); }
+
+/* line 248, style.scss */
+.tables { background-image: url(../image/tables.png); }
+
+/* line 251, style.scss */
+.lamp { background-image: url(../image/lamps.png); }
+
+/* line 254, style.scss */
+.alarm-clock { background-image: url(../image/alarm-clock.png); }
+
+/* line 257, style.scss */
+.corinne { background-image: url(../image/corinne.png); }
+
+/* line 260, style.scss */
+.spoon { background-image: url(../image/spoon.png); }
+
+/* line 263, style.scss */
+.chair { background-image: url(../image/chairs.png); }
+
+/* line 266, style.scss */
+.iconic { background-image: url(../image/iconic.png); }
+
+/* line 269, style.scss */
+.clock { background-image: url(../image/clock.png); }
+
+/* line 272, style.scss */
+.btn__load-more { position: absolute; width: 125px; height: 30px; left: calc(50% - 63px); background-color: #959595; color: #fff; text-transform: uppercase; font-weight: 700; border: none; border-radius: 5px; font-size: 13px; margin-bottom: 70px; }
